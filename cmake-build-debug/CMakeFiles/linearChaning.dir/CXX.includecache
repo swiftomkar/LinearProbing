@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Omkar Desai/Documents/C++/linearChaning/LinearChaning.h
+
+C:/Users/Omkar Desai/Documents/C++/linearChaning/main.cpp
+iostream
+-
+LinearChaning.h
+C:/Users/Omkar Desai/Documents/C++/linearChaning/LinearChaning.h
+
