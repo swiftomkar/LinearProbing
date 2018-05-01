@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Omkar Desai/Documents/C++/linearChaning
+# Install script for directory: C:/Users/Omkar Desai/Documents/C++/linearProbing
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Omkar Desai/Documents/C++/linearChaning/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Omkar Desai/Documents/C++/linearProbing/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

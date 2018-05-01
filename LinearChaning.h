@@ -4,12 +4,15 @@
 #pragma once
 
 #include "LinkedList.h"
+#include <fstream>
 template <typename T>
 class linearChaining{
 private:
     T * arr;
     int size;
     int capacity;
+    int collosion;
+    int histo[10]={0};
     void grow(){
         T* bkp=arr;
         T* arr=new int[capacity*2];
@@ -43,16 +46,22 @@ public:
             arr[i]=-1;
     }
     void add(T key){
+        collosion=0;
         if(capacity<=2*size)
             grow();
         int pos=hash(key,capacity);
-
         while(arr[pos]!= -1){
+            collosion=0;
+            if(collosion<=10)
+                collosion++;
+            else
+                collosion=10;
             pos++;
             if(pos>=capacity)
                 pos=0;
         }
         arr[pos]=key;
+        histo[collosion]++;
         size++;
     }
     int find(T key){
@@ -66,5 +75,9 @@ public:
         }
         return -1;
     }
-
+    void hist(){
+        for(int i=0;i<10;i++){
+            std::cout<<"times of "<<i<<" number of collisions is: "<<histo[i]<<std::endl;
+        }
+    }
 };

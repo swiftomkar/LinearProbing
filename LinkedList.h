@@ -47,7 +47,7 @@ public:
         i->next= nullptr;
         delete rem;
     }
-    friend std::ostream& operator <<(std::ostream& s, const linkedlist4& l){
+    friend std::ostream& operator <<(std::ostream& s, const linkedlist& l){
         for (node* p = l.head; p != nullptr; p = p->next)
             s << p->data << ' ';
         return s;

@@ -11,6 +11,7 @@ int main() {
     myHash.add(533);
     myHash.add(1);
     myHash.add(10);
-    cout<<myHash.find(533);
+    cout<<myHash.find(533)<<endl;
+    myHash.hist();
     return 0;
 }
